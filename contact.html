@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Your Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="index.html">Pyrostruct</a>
+            </div>
+            <div class="nav-menu">
+                <a href="index.html#home" class="nav-link">Home</a>
+                <a href="index.html#about" class="nav-link">About</a>
+                <a href="index.html#skills" class="nav-link">Skills</a>
+                <a href="index.html#projects" class="nav-link">Projects</a>
+                <a href="index.html#testimonials" class="nav-link">Testimonials</a>
+                <a href="contact.html" class="nav-link active">Contact</a>
+
+                <button class="theme-toggle" id="theme-toggle">
+                    <i class="fas fa-moon"></i>
+                </button>
+            </div>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Contact Section -->
+    <section class="contact-page">
+        <div class="container">
+            <div class="contact-header">
+                <h1>Get In Touch</h1>
+                <p>Have a project in mind? Let's discuss how we can work together to bring your ideas to life.</p>
+            </div>
+            
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h2>Let's Talk</h2>
+                    <p>I'm always interested in hearing about new projects and opportunities.</p>
+                    
+                    <div class="contact-methods">
+                        <div class="contact-method">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <h3>Email</h3>
+                                <p>dsagnik36@gmail.com</p>
+                            </div>
+                        </div>
+                        <div class="contact-method">
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <h3>Phone</h3>
+                                <p>9080930713</p>
+                            </div>
+                        </div>
+                        <div class="contact-method">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <h3>Location</h3>
+                                <p>India-West Bengal</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="contact-form-container">
+    <!-- FORMSPREE CONTACT FORM - Sends emails to your configured email -->
+    <form id="contactForm" action="https://formspree.io/f/mdkzlyan" method="POST" class="contact-form">
+        <!-- FORM TITLE SECTION -->
+        <div class="contact-left-title">
+            <h2>Get in touch</h2>
+            <hr>
+        </div>
+        
+        <!-- FORM INPUT FIELDS -->
+        <input type="text" name="name" id="name" placeholder="Your Name" required>
+        <input type="email" name="email" id="email" placeholder="Your Email" required>
+        <textarea name="message" id="message" placeholder="Your Message" required></textarea>
+        
+        <!-- SUBMIT BUTTON -->
+        <button type="submit" id="submitBtn">Send Message</button>
+    </form>
+    
+    <!-- SUCCESS/ERROR MESSAGE DISPLAY -->
+    <div class="form-message" id="form-message"></div>
+</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Let's Connect</h3>
+                    <div class="social-links">
+                        <a href="https://www.linkedin.com/in/sagnik-datta-55426631a/"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://github.com/darkflame2015"><i class="fab fa-github"></i></a>
+                        <a href="https://www.instagram.com/dsagnik7/"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html#home">Home</a></li>
+                        <li><a href="index.html#about">About</a></li>
+                        <li><a href="index.html#projects">Projects</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; Pyrostruct 2025. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
